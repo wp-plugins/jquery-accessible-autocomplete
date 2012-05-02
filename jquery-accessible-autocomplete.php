@@ -3,9 +3,9 @@
 Plugin Name: JQuery Accessible Autocomplete
 Plugin URI: http://wordpress.org/extend/plugins/jquery-accessible-autocomplete/
 Description: WAI-ARIA Enabled Autocomplete Plugin for Wordpress
-Author: Theofanis Oikonomou, Dionysia Kontotasiou
-Version: 2.0
-Author URI: http://www.iti.gr/iti/people/ThOikon.html, http://www.iti.gr/iti/people/Dionisia_Kontotasiou.html
+Author: Kontotasiou Dionysia
+Version: 3.0
+Author URI: http://www.iti.gr/iti/people/Dionisia_Kontotasiou.html
 */
 
 add_action("plugins_loaded", "JQueryAccessibleAutocomplete_init");
@@ -19,8 +19,8 @@ function JQueryAccessibleAutocomplete_init() {
         wp_deregister_script('jquery');
 
         // add your own script
-        wp_register_script('jquery-1.4.2', ( get_bloginfo('wpurl') . '/wp-content/plugins/jquery-accessible-autocomplete/lib/jquery-ui/jquery-1.4.2.js'));
-        wp_enqueue_script('jquery-1.4.2');
+        wp_register_script('jquery-1.6.4', ( get_bloginfo('wpurl') . '/wp-content/plugins/jquery-accessible-autocomplete/lib/jquery-ui/jquery-1.6.4.js'));
+        wp_enqueue_script('jquery-1.6.4');
 
         wp_register_script('jquery.ui.core.js', ( get_bloginfo('wpurl') . '/wp-content/plugins/jquery-accessible-autocomplete/lib/jquery-ui/ui/jquery.ui.core.js'));
         wp_enqueue_script('jquery.ui.core.js');
